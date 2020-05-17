@@ -4,9 +4,9 @@ services:
   terraria:
     image: beardedio/terraria:vanilla-latest
     environment:
-      world=./Worlds/Oonga_Boona.wld
+      world=Oonga_Boona
     volumes:
-      - $HOME/terraria/config:/config
+      - ./Worlds:/config
     ports:
       - "7777:7777"
     restart: always

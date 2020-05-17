@@ -1,11 +1,12 @@
 version: '3.3'
-  
-terraria:
-  image: beardedio/terraria:vanilla-latest
-  environment:
-    world=./Worlds/Oonga_Boona.wld
-  volumes:
-    - $HOME/terraria/config:/config
-  ports:
-    - "7777:7777"
-  restart: always
+
+services:
+  terraria:
+    image: beardedio/terraria:vanilla-latest
+    environment:
+      world=./Worlds/Oonga_Boona.wld
+    volumes:
+      - $HOME/terraria/config:/config
+    ports:
+      - "7777:7777"
+    restart: always

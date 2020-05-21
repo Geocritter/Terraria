@@ -7,7 +7,7 @@ services:
       - '7777:7777'
     restart: unless-stopped
     environment:
-      - world=Oonga_Boonga
+      - world=Oonga_Boonga.wld
     volumes:
       - /home/ubuntu/terraria/config:/config
     tty: true

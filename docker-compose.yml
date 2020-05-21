@@ -5,9 +5,9 @@ services:
     image: beardedio/terraria:vanilla-latest
     ports:
       - '7777:7777'
-    restart: unless-stopped
     environment:
       - world=<Oonga_Boonga>
     volumes:
       - /home/ubuntu/terraria/config:/config
     tty: true
+    command: tail -f /dev/null
